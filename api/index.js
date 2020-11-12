@@ -5,7 +5,7 @@ require("dotenv").config();
 const { toHTML } = require("slack-markdown");
 var h2m = require("h2m");
 
-async function def() {
+export default async (req, res) => {
   const octokit = new Octokit({
     auth: process.env.GH_TOKEN,
   });
@@ -59,7 +59,3 @@ async function def() {
     author: { name: "Scrapbook", email: "scrappy@sampoder.com" },
   });
 }
-module.exports = (req, res) => {
-  def();
-  res.send("Done")
-};
