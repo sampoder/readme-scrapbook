@@ -24,8 +24,7 @@ export default async (req, res) => {
 
   console.log(h2m(toHTML(scrapbookPosts[0].text)).slice(0, 100));
 
-  const tableToAdd = `
-  <!--- START_SCRAPBOOK_WIDGET --->
+  const tableToAdd = `<!--- START_SCRAPBOOK_WIDGET --->
   | <img src ="${scrapbookPosts[0].attachments[0].url}">  |  <img src ="${
     scrapbookPosts[1].attachments[0].url
   }"> | <img src ="${scrapbookPosts[2].attachments[0].url}"> |
@@ -37,8 +36,7 @@ export default async (req, res) => {
   }  | ${h2m(toHTML(scrapbookPosts[2].text)).slice(0, 100)}${
     scrapbookPosts[2].text.length > 100 ? "..." : ""
   }   |
-  <!--- END_SCRAPBOOK_WIDGET --->
-  `;
+  <!--- END_SCRAPBOOK_WIDGET --->`;
 
   const result = await octokit.repos.createOrUpdateFileContents({
     owner: process.env.GH_USERNAME,
