@@ -58,4 +58,6 @@ export default async (req, res) => {
     committer: { name: "Scrapbook", email: "scrappy@sampoder.com" },
     author: { name: "Scrapbook", email: "scrappy@sampoder.com" },
   });
+
+  res.send('Done!')
 }
