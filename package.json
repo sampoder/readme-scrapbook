@@ -1,0 +1,18 @@
+{
+  "name": "readme-scrapbook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sampoder/readme-scrapbook.git",
+  "author": "Sam Poder <39828164+sampoder@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^18.0.9",
+    "base-64": "^1.0.0",
+    "basic-browser-request": "^10.0.0",
+    "dotenv": "^8.2.0",
+    "github-file": "^1.1.3",
+    "h2m": "^0.7.0",
+    "isomorphic-unfetch": "^3.1.0",
+    "slack-markdown": "^0.0.4"
+  }
+}
