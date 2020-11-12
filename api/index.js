@@ -59,5 +59,7 @@ async function def() {
     author: { name: "Scrapbook", email: "scrappy@sampoder.com" },
   });
 }
-
-def();
+module.exports = (req, res) => {
+  def();
+  res.send("Done")
+};
