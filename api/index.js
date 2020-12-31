@@ -25,9 +25,9 @@ export default async (req, res) => {
   console.log(h2m(toHTML(scrapbookPosts[0].text)).slice(0, 100));
 
   const tableToAdd = `<!--- START_SCRAPBOOK_WIDGET --->
-  | <img src ="${scrapbookPosts[0].attachments[0].url}" height="400px">  |  <img src ="${
+  | <img src ="${scrapbookPosts[0].attachments[0].url}" height="200px">  |  <img src ="${
     scrapbookPosts[1].attachments[0].url
-  }" height="400px"> | <img src ="${scrapbookPosts[2].attachments[0].url}" height="400px"> |
+  }" height="200px"> | <img src ="${scrapbookPosts[2].attachments[0].url}" height="200px"> |
 |---|---|---|
 | ${h2m(toHTML(scrapbookPosts[0].text)).slice(0, 100)}${
     scrapbookPosts[0].text.length > 100 ? "..." : ""
